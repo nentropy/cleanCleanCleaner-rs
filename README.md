@@ -1,4 +1,4 @@
-🧹 CleanSweep: Advanced System Cleanup Tool 🛠️
+# CleanSweep: Advanced System Cleanup Tool 🛠️
 🚀 Quick Start
 bashCopygit clone https://github.com/yourusername/cleansweep.git
 cd cleansweep
