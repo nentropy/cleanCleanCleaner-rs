@@ -1,0 +1,26 @@
+# Allow specific lints that may be too restrictive for your project
+allow = [
+    "clippy::module_name_repetitions",  # Often acceptable to repeat module names
+    "clippy::too_many_arguments",       # Sometimes functions need multiple arguments
+    "clippy::wildcard_imports",         # Allow wildcard imports where appropriate
+]
+
+# Warn for common issues, without breaking the build
+warn = [
+    "clippy::unwrap_used",              # Encourage replacing unwrap with proper error handling
+    "clippy::expect_used",              # Warn on expect, prefer detailed error handling
+    "clippy::large_enum_variant",       # Warn if enum variants have large memory size differences
+]
+
+# Deny unsafe or dangerous patterns in code
+deny = [
+    "clippy::mem_forget",               # Using mem::forget can lead to memory leaks
+    "clippy::float_cmp",                # Prevent direct float comparisons due to precision issues
+    "clippy::manual_map",               # Deny manual map patterns that could use iterator methods
+]
+
+# Exclude files or directories from linting (e.g., generated code or vendor libraries)
+exclude_files = [
+    "build.rs",                              # Ignore the build script from linting
+    "src/vendor/*",                          # Exclude vendor directories from Clippy
+]

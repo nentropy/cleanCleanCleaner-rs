@@ -1,0 +1,11 @@
+[submodule "sha1_cracker"]
+    path = "./sha1_cracker"
+    url = "https://github.com/nentropy/tallcap_rust.git"
+
+[submodule "generate_reports"]
+    path = "./generate_reports"
+    url = "https://github.com/nentropy/tallcap_rust.git"
+
+[submodule "blackhat_rust"]
+    path = "./"
+    url = "https://github.com/nentropy/tallcap_rust.git"
